@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .btn {
+            background-color: #34c6eb;
+            color: white;
+            padding: 15px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #1a8dba;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Roblox</h1>
+    <p>Click the button below to show the Roblox login page right here:</p>
+    <button class="btn" onclick="document.getElementById('roblox-frame').style.display = 'block'; this.style.display = 'none';">Show Roblox Login</button>
+    
+    <iframe id="roblox-frame" style="display:none;" src="https://www.roblox.com"></iframe>
+</body>
+</html>
